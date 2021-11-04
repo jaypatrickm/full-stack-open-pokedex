@@ -33,3 +33,5 @@ jobs:
             heroku_api_key: ${{secrets.HEROKU_API_KEY}}
             heroku_app_name: "arcane-eyrie-20188"
             heroku_email: "jaypatrickm@gmail.com"
+            healthcheck: "https://arcane-eyrie-20188.herokuapp.com/health"
+            checkstring: "ok"
