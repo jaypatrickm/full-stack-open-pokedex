@@ -35,3 +35,4 @@ jobs:
             heroku_email: "jaypatrickm@gmail.com"
             healthcheck: "https://arcane-eyrie-20188.herokuapp.com/health"
             checkstring: "ok"
+            rollbackonhealthcheckfailed: true
