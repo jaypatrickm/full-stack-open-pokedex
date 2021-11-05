@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: '0'
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
@@ -42,6 +40,9 @@ jobs:
             healthcheck: "https://arcane-eyrie-20188.herokuapp.com/health"
             checkstring: "ok"
             rollbackonhealthcheckfailed: true
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
       - name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.36.0
         if: ${{ github.event_name == 'push' }}
