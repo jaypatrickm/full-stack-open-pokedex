@@ -26,6 +26,6 @@ jobs:
         if: contains(env.COMMIT_MESSAGES, 'skip')
         run: |
           echo "skip"
-      - name: skip6
+      - name: skip23
         run: |
           echo "skip2"
