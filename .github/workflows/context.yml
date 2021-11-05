@@ -26,6 +26,6 @@ jobs:
         if: ${{!contains(toJson(join(github.event.commits.*.message, ' ')), '#skip')}}
         run: |
           echo "skip"
-      - name: don't skip me
+      - name: don't skip me 2
         run: |
           echo "skip2"
