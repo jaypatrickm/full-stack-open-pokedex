@@ -25,7 +25,7 @@ jobs:
         if: contains(github.event.commits.*.message, "skip")
       - name: contains skip
           run: |
-            echo "skip"
+            echo "skip"s
       - name: contains skip2
           run: |
-            echo "skip2"
+            echo "skip2"s
