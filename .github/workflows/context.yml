@@ -23,9 +23,9 @@ jobs:
           COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
         run: echo "$COMMIT_MESSAGES"
         if: contains(github.event.commits.*.message, "skip")
-      - name: contains skip
-          run: |
-            echo "skip"s
-      - name: contains skip2
-          run: |
-            echo "skip2"s
+      - name: skip
+        run: |
+          echo "skip"
+      - name: skip2
+        run: |
+          echo "skip2"
